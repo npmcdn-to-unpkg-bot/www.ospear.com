@@ -1,0 +1,4 @@
+- www.ospear.com
+  - on GAE for Python
+  - お問い合わせだけdjangoで
+  - 他ページは静的

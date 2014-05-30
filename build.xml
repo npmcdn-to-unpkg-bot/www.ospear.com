@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." default="DeployToGAE">
+	<property name="project_location" value="MyHome\src" />
+	<property name="appengine_dir" value="C:\Program Files\Google\google_appengine" />
+	<property name="appcfg" value="appcfg.py" />
+	<property name="project_update_cmd" value="${appengine_dir}\${appcfg}" />
+	<target name="DeployToGAE">
+		<echo>Execute Command : ${project_update_cmd}</echo>
+		<echo>Target Directory : ${basedir}\${project_location}</echo>
+		<exec executable="c:\python27\python.exe">
+			<arg line='"${project_update_cmd}" update "${basedir}\${project_location}"' />
+		</exec>
+	</target>
+</project>

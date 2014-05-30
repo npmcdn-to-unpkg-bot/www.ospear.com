@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Web開発事務所オースピア - お問い合わせ</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css"><![endif]-->
+    <!--[if lt IE 9]><script src="/js/ie.js"></script><![endif]-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22325601-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body><div id="container">
+
+<header id="header">
+    <div>
+        <hgroup>
+            <h1>O-SPEAR</h1>
+            <h2>Web開発事務所オースピア</h2>
+        </hgroup>
+    </div>
+    <nav id="nav">
+        <ul>
+            <li><a href="/">トップ</a></li>
+            <li><a href="/s/about.html">サービス内容</a></li>
+            <li><a href="/s/profile.html">プロフィール</a></li>
+            <li><a href="/s/products.html">制作実績</a></li>
+            <li class="selected"><a href="/contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="intro">
+    <header>
+        <h2>Do you want to create website which used latest technology?</h2>
+    </header>
+    <p>I can do.
+    I make good use of the technology named HTML5, CSS3, and JavaScript, and make the websites such as your shops and offices.
+    It is possible to optimize it for a smart phone named iPhone and Android.
+    Please contact me. </p>
+</section>
+
+<section id="contact" class="content">
+    <section class="main">
+        <header>
+            <h2>お問い合わせ</h2>
+        </header>
+        {% if success %}<p class="msg">問い合わせが完了しました。</p>
+        {% else %}{% if errors.system_error %}<p class="errors">問い合わせが失敗しました。</p>
+        {% else %}{% if errors %}<p class="errors">入力項目に誤りがあります。</p>{% endif %}{% endif %}{% endif %}
+        <p>Webページ制作、Webアプリケーション制作に関するお問い合わせ、お見積りのご依頼、各種ご相談・ご要望などありましたら、以下のフォームよりお問い合わせください。<br/>
+        尚、お客様よりお預かりした個人情報は、お問い合わせ対応のためにのみ利用させていただきます。<br/>
+        ※印は必須入力項目です。</p>
+        <form action="/contact" method="post" onsubmit='return confirm("送信してよろしいですか？");'>
+            <span>会社名/店舗名※</span><br/>
+            <input class="contact" type="text" name="office" value="{{office}}" placeholder="株式会社XXX, XXXショップ" required="required"/><br/>
+            {%ifequal errors.office 'blank' %}<span class="error">必須入力です。</span><br/>{% endifequal %}
+            <span>担当者名※</span><br/>
+            <input class="contact" type="text" name="name" value="{{name}}" placeholder="XX XX" required="required"/><br/>
+            {%ifequal errors.name 'blank' %}<span class="error">必須入力です。</span><br/>{% endifequal %}
+            <span>住所</span><br/>
+            <input class="contact" type="text" name="address" value="{{address}}" placeholder="XX県XX市XX XX-XX" /><br/>
+            <span>電話番号</span><br/>
+            <input class="contact" type="tel" name="tel" value="{{tel}}" placeholder="XX-XXXX-XXXX" /><br/>
+            <span>メールアドレス※</span><br/>
+            <input class="contact" type="email" name="email" value="{{email}}" placeholder="XXX@XXX.XXX" required="required"/><br/>
+            {%ifequal errors.email 'blank' %}<span class="error">必須入力です。</span><br/>{% endifequal %}
+            {%ifequal errors.email 'invalid' %}<span class="error">書式が不正です。</span><br/>{% endifequal %}
+            <span>お問い合わせ内容※</span><br/>
+            <textarea class="contact" name="content" placeholder="" required="required">{{content}}</textarea><br/>
+            {%ifequal errors.content 'blank' %}<span class="error">必須入力です。</span><br/>{% endifequal %}
+            
+            <input class="contact" type="submit" name="submit" value="お問い合わせ" />
+        </form>
+    </section>
+    <section class="side">
+        <section class="outline">
+            <header><h3>関連コンテンツ</h3></header>
+            <ul>
+                <li><a href="/s/policy.html">サイトポリシー</a></li>
+                <li><a href="/s/privacy.html">個人情報保護方針</a></li>
+            </ul>
+        </section>
+    </section>
+    <footer></footer>
+</section>
+
+<footer id="footer">
+    <div id="bottomlink">
+        <ul>
+            <li><a href="/">トップ</a></li>
+            <li><a href="/s/about.html">サービス内容</a></li>
+            <li><a href="/s/profile.html">プロフィール</a></li>
+            <li><a href="/s/products.html">制作実績</a></li>
+            <li class="selected"><a href="/contact">お問い合わせ</a></li>
+            <li><a href="/s/link.html">リンク</a></li>
+            <li><a href="/s/privacy.html">個人情報保護方針</a></li>
+            <li><a href="/s/policy.html">サイトポリシー</a></li>
+            <li><a href="/s/sitemap.html">サイトマップ</a></li>
+        </ul>
+    </div>
+    <div id="copy">&copy;2011 O-SPEAR All Rights Reserved.</div>
+</footer>
+
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
