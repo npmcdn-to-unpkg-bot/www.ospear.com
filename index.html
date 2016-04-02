@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ospear</title>
+    <link rel=stylesheet type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head
+  <body>
+    <div class="paralux" id="home">
+      <h1 class="clearText">OSPEAR</h1>
+    </div>
+    <div class="paralux" id="profile">
+      <section>
+        <h2>オースピアについて</h2>
+        <ul>
+          <li>オースピアは、東京都心及び埼玉県所沢市を拠点に活動する事務所（企業形態：個人事業）です。 当事務所は、小さな個人事務所ですが、お客様の会社・事務所・店舗のWebサイト制作からWebアプリケーション開発、システム開発まで誠意をもって対応させてもらいます。
+          <li>エンジニア出身ですので、動的な要素を含んだWebサイト制作やWebアプリケーション開発を得意としています。 HTML5やCSS3などの最新技術を駆使して、閲覧者の興味を引くようなWebサイトを制作します。
+          <li>どのような雰囲気・方向性が良いのか、何か面白い試みができないか、ヒアリング等通して入念に考え、お客様の所望するWebサイトやシステムを提案します。 お客様側で、遊び心のあったり、奇抜で面白いアイディアや要望があっても実現が難しいだろうと思われることがあるかもしれません。しかし、オースピアなら、実現可能になるかもしれません。 ぜひ、そういったアイディアや要望を直接をお伝えください。ご相談ください。 お客様のWebサイトやシステムを一緒に作りあげていきましょう。
+        </ul>
+        <h2>経歴</h2>
+        <ul>
+          <li>2006-03 金沢大学 工学部 情報システム工学科 卒
+          <li>2006-04 株式会社インターネットイニシアティブ 入社
+          <li>2011-07 株式会社インターネットイニシアティブ 退社
+          <li>2011-07 個人事業 屋号 オースピア 開業
+        </ul>
+      </section>
+    </div>
+    <div class="paralux" id="skils">
+      <section>
+        <h2>サーバサイド設計/開発</h2>
+        <ul>
+          <li>Java / Groovy / Clojure / Struts1,2 / Spring / Slim3 / GoogleAppEngine
+          <li>PHP / Yii / Zend / Silex / Smarty
+          <li>Ruby / Rails
+          <li>Python / Django / GoogleAppEngine
+          <li>Perl
+          <li>C#
+        </ul>
+        <h2>フロントエンド設計/開発</h2>
+        <ul>
+          <li>HTML / HTML5 / CSS / CSS3 / SASS / LESS / Gulp
+          <li>Javascript / Coffeescript / jQuery / AngularJS / Backbone.js
+          <li>jQueryUI / Bootstrap / Wordpress
+        </ul>
+        <h2>データベース設計/開発</h2>
+        <ul>
+          <li>MySQL / PostgreSQL / Oracle Database / MongoDB
+          <li>RDS / Redshift
+          <li>memcached / redis
+        </ul>
+        <h2>サーバ設計/構築</h2>
+        <ul>
+          <li>GoogleAppEngine
+          <li>AWS / EC2 / ELB / RDS / S3 / ElasticCache / Redshfit / SQS
+          <li>DigitalOcean / VPS
+        </ul>
+    </div>
+    <div class="paralux" id="products">
+      <section>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+    </div>
+    <div class="paralux" id="contact">
+      <section>
+        <h2>お問い合わせ</h2>
+        <p>Webサイト/アプリケーション制作、システム開発に関するお問い合わせ、お見積りのご依頼、各種ご相談・ご要望などありましたら、以下のフォームよりお問い合わせください。<br/>
+        尚、お客様よりお預かりした個人情報は、お問い合わせ対応のためにのみ利用させていただきます。<br/>
+        ※ 印は必須入力項目です。</p>
+        <form id="contactForm" action="#contact">
+          <div class="msg"></div>
+          <ul>
+            <li>
+              <label>会社名/店舗名 ※</label>
+              <input class="contact" type="text" name="office" value="" placeholder="株式会社XXX, XXXショップ" required="required"/>
+            </li>
+            <li>
+              <label>担当者名 ※</label>
+              <input class="contact" type="text" name="name" value="" placeholder="XX XX" required="required"/>
+            </li>
+            <li>
+              <label>住所</label>
+              <input class="contact" type="text" name="address" value="" placeholder="XX県XX市XX XX-XX" />
+            </li>
+            <li>
+              <label>電話番号</label>
+              <input class="contact" type="tel" name="tel" value="" placeholder="XX-XXXX-XXXX" />
+            </li>
+            <li>
+              <label>メールアドレス ※</label>
+              <input class="contact" type="email" name="email" value="" placeholder="XXX@XXX.XXX" required="required"/>
+            </li>
+            <li>
+              <label>お問い合わせ内容 ※</label>
+              <textarea class="contact" name="content" placeholder="" required="required"></textarea>
+            </li>
+            <li>
+              <input class="contact" type="submit" name="submit" value="お問い合わせ" />
+            </li>
+          </ul>
+        </form>
+      </section>
+    </div>
+    <nav id="menu">
+      <ul>
+        <li><a href="#home">HOME</a>
+        <li><a href="#profile">PROFILE</a>
+        <li><a href="#skils">SKILS</a>
+        <li><a href="#products">PRODUCTS</a>
+        <li><a href="#contact">CONTACT</a>
+      </ul>
+    </nav>
+    <footer>
+      <a href="#privacypolicy">個人情報保護方針</a>
+      <a href="#sitepolicy">サイトポリシー</a>
+      &copy; 2011 OSPEAR All Rights Reserved.
+    </footer>
+    <aside id="privacypolicy">
+      <h2>個人情報保護方針</h2>
+      <p>オースピアは、お客様から取得した個人情報の重要性を認識し、保護することを事業活動の基本であると共に経営上の最重要な課題の一つと考えています。お客様へ安心・安全・信頼のサービスを提供していくため、以下のような基本方針の徹底を図り、これを遵守しています。</p>
+      <h3>基本方針</h3>
+      <ol class="decimal">
+        <li>当方は、個人情報保護法および関連するその他の法令・規範を遵守し、これを実施し、維持すると共に継続的な改善に努めます。</li>
+        <li>当方は、個人情報保護に関する管理体制を確立するとともに、当方規程を従業員に周知し、その遵守徹底に努めます。</li>
+        <li>当方は、個人情報をお客様に明示した利用目的の範囲内で取り扱います。また、お客様からご提供頂いた個人情報を、お客様の同意がある場合または正当な理由がある場合を除き、第三者に開示または提供しません。</li>
+        <li>当方は、個人情報を正確かつ最新の状態に保つとともに、個人情報への不正アクセス、個人情報の漏えい、滅失、き損等の予防に努め、情報セキュリティの向上、是正を継続的に実施します。</li>
+        <li>当方は、お客様からの個人情報に関するお問い合わせ、開示等のご請求に誠実かつ迅速に対応します。</li>
+      </ol>
+      <h3>個人情報の利用目的</h3>
+      <p>当方は、お客様から個人情報をご提供頂く場合、予め個人情報の利用目的を明示し、その利用目的の範囲内で利用します。予め明示した利用目的の範囲を超えて、お客様の個人情報を利用する必要が生じた場合は、お客様にその旨をご連絡し、お客様の同意を頂いた上で利用します。当方が保有する個人情報の利用目的は下記の通りです。</p>
+      <ul class="disc">
+        <li>ご発注申し込み先、ご発注先ご本人の特定のため</li>
+        <li>お問い合わせ・ご相談への対応</li>
+        <li>主なサービスであるWebサイト制作のため</li>
+        <li>納品物、資料等の発送</li>
+        <li>ご発注情報の登録・履歴の記録のため</li>
+        <li>サービス、イベント等のご案内送付</li>
+        <li>顧客サポート、メンテナンスなどアフターサービスその他で連絡するため</li>
+        <li>アンケート調査実施、モニター等の実施</li>
+        <li>契約の履行</li>
+        <li>金融機関口座の確認やお支払い、ご入金確認などお取引の決済のため</li>
+        <li>お客様との商談、お打ち合わせ等</li>
+        <li>各種会員制サービスの提供</li>
+        <li>個人情報を集計・分析し、個人を識別することができない統計データを作成したり、販売傾向の把握等、市場調査のため</li>
+      </ul>
+      <h3>個人情報の適正な取得</h3>
+      <p>当方では、個人情報の取得は、適法かつ公正な手段で行います。</p>
+      <h3>個人情報の提供</h3>
+      <p>当方は、次の場合を除き、お客様の個人情報を第三者に開示または提供しません。</p>
+      <ol class="decimal">
+        <li>お客様の同意がある場合</li>
+        <li>法令等に基づき、裁判所、検察庁、警察機関などの公的機関から開示の要請があった場合</li>
+        <li>人の生命、身体又は財産の保護のために必要がある場合であって、お客さまの同意を得ることが困難な場合</li>
+        <li>利用目的の達成に必要な範囲で、個人情報の取り扱いを委託する場合</li>
+        <li>合併、会社分割、営業譲渡その他の事由によって事業の承継が行われる場合</li>
+      </ol>
+      <p>当方は、上記に関わらず、お客様へのサービス提供、お問い合わせ等への対応に関して、当方の関係会社より対応させて頂くことが適切と判断される場合に、お客様の住所、氏名、電話番号等を当該関係会社等へ提供することがあります。
+      この場合、お客様は当方に対し当該関係会社等への個人情報提供の停止を請求することができます。</p>
+      <h3>個人情報に関するお問い合わせ</h3>
+      <p>お客様の個人情報の開示・訂正・削除等に関するお問い合わせは「CONTACT」からご連絡ください。</p>
+      <h3>その他の事項</h3>
+      <h4>アクセス情報について</h4>
+      <p>当サイトでは、より良いサービスをご提供させて頂くために、アクセスログ情報を取得する場合がございます。予めご了承下さい。アクセスログの取得はお客様の個人情報を特定することを目的としたものではありません。</p>
+    </aside>
+    <aside id="sitepolicy">
+      <h2>サイトポリシー</h2>
+      <p>当Webサイト（www.ospear.jp）は、オースピアにより運営しています。
+      ご利用にあたっては、下記のご利用規定をあらかじめご承知いただけますようお願いいたします。</p>
+      <h3>免責事項</h3>
+      <p>当Webサイト上のコンテンツの内容について妥当性や正確性について保証するものではなく、一切の責任を負い兼ねます。
+      当Webサイト上のコンテンツやURLは予告なしに変更または中止されることがあります。当Webサイトは情報提供を目的としており、その他の目的を意図するものではありません。また、理由の如何に関わらず、情報の変更及び当Webサイトの運用の中断または中止によって生じるいかなる損害についても責任を負うものではありません。本規定は利用者の事前承諾を得ることなく変更できるものとします。</p>
+      <h3>個人情報保護方針</h3>
+      <p>当Webサイトにおける個人情報の取扱いにつきましては「個人情報保護方針」に準じるものとします。</p>
+      <h3>著作権</h3>
+      <p>当Webサイト内のコンテンツの著作権は、当方または納品先が保有し、許可なく複製、転用など二次利用を禁じます。また、コンテンツの内容を改変することは一切認めておりません。</p>
+      <h3>制作したWebサイトの当サイトへの掲載について</h3>
+      <p>当方で制作させていただいたWebサイトは、お客様の許可を得てから当サイト内に制作実績として掲載させて頂いています。</p>
+      <h3>外部サイトリンクについて</h3>
+      <p>当Webサイトは、いくつかの外部サイトへリンクされている場合があります。リンク先Webサイトの内容について、弊社は責任を負うものではありません。</p>
+      <h3>当Webサイトへのリンク</h3>
+      <p>当Webサイトは自由リンクしていただいて構いません。ただし、当方の信用を損なうようなリンク、アダルトサイト、公的秩序に反するサイトへからリンクは固くお断りします。</p>
+    </aside>
+  </body>
+</html>
