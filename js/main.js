@@ -41,10 +41,13 @@ $(function() {
     return true;
   };
   // Products
-  $('#products ul').masonry({
+  var $products = $('#products ul').masonry({
     itemSelector: 'li',
     columnWidth: 'li',
     percentPosition: true
+  })
+  $products.imagesLoaded().progress(function() {
+    $products.masonry('layout');
   });
   // Contact
   $('#contactForm').submit(function() {
