@@ -40,6 +40,12 @@ $(function() {
   var validate = function(req) {
     return true;
   };
+  // Products
+  $('#products ul').masonry({
+    itemSelector: 'li',
+    columnWidth: 'li',
+    percentPosition: true
+  });
   // Contact
   $('#contactForm').submit(function() {
     $this = $(this);
