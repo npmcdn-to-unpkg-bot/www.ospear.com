@@ -1,0 +1,245 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+#home {
+  background-image: url(http://placekitten.com/g/1000/800);
+}
+#home h1 {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/ospear_logo_w.png);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  filter: drop-shadow(2px 2px 2px #000);
+  -webkit-filter: drop-shadow(2px 2px 2px #000);
+}
+@media screen and (max-width: 320px) {
+  #home h1 {
+    background-position: center 30%;
+    background-size: contain;
+    -webkit-background-size: contain;
+  }
+}
+#profile {
+  background-image: url(http://placekitten.com/g/900/800);
+}
+#skils {
+  background-image: url(http://placekitten.com/g/900/850);
+}
+#products {
+  font-size: smaller;
+  background-image: url(http://placekitten.com/g/900/900);
+}
+#products ul {
+  padding: 0;
+  list-style-type:none;
+}
+#products ul li {
+  display: block;
+  width: 30%;
+  min-width: 290px;
+  background-color: rgba(0,0,0,0.4);
+  margin: 5px;
+  padding: 10px;
+  list-style: none;
+  box-shadow: 2px 2px 4px 4px rgba(255,255,255,0.31), -2px -2px 4px 4px rgba(255,255,255,0.31);
+}
+#products ul li img {
+  width: 96%;
+  text-align: center;
+  margin: 0 2% 0 2%;
+}
+@media screen and (max-width: 768px) {
+  #products ul li {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #products ul li {
+    margin: 5px 0 5px 0;
+    padding: 0 5px 0 5px;
+  }
+}
+#contact {
+  background-image: url(http://placekitten.com/g/800/900);
+}
+.paralux {
+  width: 100%;
+  min-height: 800px;
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.paralux > * {
+  display:table-cell;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0 10px 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .paralux > * {
+    padding: 0 20px 0 200px;
+  }
+  .paralux {
+    background-attachment: fixed;
+  }
+}
+.paralux ul li {
+  text-align: left;
+}
+.clearText {
+  text-indent:-9999px;
+  white-space:nowrap;
+  overflow:hidden;
+}
+#contact {
+  padding-bottom: 50px;
+}
+#contact ul {
+  width: calc(80%-160px);
+  margin: 0 auto 20px auto;
+}
+#contact ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+#contact label {
+  margin-right: 10px;
+  width: 160px;
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  #contact ul {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    padding: 0;
+  }
+  #contact label {
+    display: block;
+    float: none;
+  }
+}
+#contact input[type="text"],
+#contact input[type="tel"],
+#contact input[type="email"],
+#contact textarea {
+  width: calc(80% - 160px);
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  #contact input[type="text"],
+  #contact input[type="tel"],
+  #contact input[type="email"],
+  #contact textarea {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+#contact textarea {
+  height: 100px;
+}
+#contact input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 400%;
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  #menu {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+  }
+}
+#menu ul {
+  padding: 0;
+  list-style-type:none;
+}
+#menu ul li {
+  font-size: large;
+  margin: 20px;
+}
+#menu ul li a {
+  padding-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+#menu ul li:nth-child(1) a {
+  background-image: url(../img/castle.svg);
+}
+#menu ul li:nth-child(2) a {
+  background-image: url(../img/visored-helm.svg);
+}
+#menu ul li:nth-child(3) a {
+  background-image: url(../img/burning-passion.svg);
+}
+#menu ul li:nth-child(4) a {
+  background-image: url(../img/spears.svg);
+}
+#menu ul li:nth-child(5) a {
+  background-image: url(../img/shaking-hands.svg);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: smaller;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+aside {
+  display: none;
+  z-index: 999;
+  padding: 20px;
+  position: fixed;
+  margin: 0 auto;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  width: 60%;
+  background-color: rgba(0,0,0,0.6);
+  overflow: auto;
+  box-shadow: 2px 2px 4px 4px rgba(255,255,255,0.31), -2px -2px 4px 4px rgba(255,255,255,0.31);
+}
+@media screen and (max-width: 320px) {
+  aside {
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    width: 90%;
+  }
+}
+#sitepolicy, #privacypolicy {
+}
+.msg {
+  display: none;
+}
+.done {
+  color: #0f0;
+}
+.fail {
+  color: #f00;
+}
